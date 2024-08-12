@@ -23,10 +23,12 @@
             <div class="btn">
               <i class="fa fa-times close-btn"></i>
             </div>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="Offers">Offers</a></li>
+            <li><a href="login">Login</a></li>
           
           </nav>
           <div class="btn">
@@ -169,8 +171,104 @@
   </div> 
  </section>
  
+ <main>
+  <h1 class="my-heading text-center">Other Countrys</h1> <br>
+  <div class="filters">
+      <label for="destination-filter">Destination:</label>
+      <select id="destination-filter">
+          <option value="all">All</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="america">America</option>
+          <option value="paris">Paris</option>
+          <option value="london">London</option>
+          <option value="newzealand">Newzealand</option>
+      </select>
 
- 
+      <label for="sort-price">Sort by Price:</label>
+      <select id="sort-price">
+          <option value="low-high">Low to High</option>
+          <option value="high-low">High to Low</option>
+      </select>
+  </div>
+
+  <div class="offers-grid">
+      <div class="offer-card" data-price="999" data-destination="europe">
+          <img src="images/europe.jpg" alt="Europe">
+          <div class="offer-details">
+              <h2>Europe Adventure</h2>
+              <p>Explore Europe for 7 days</p>
+              <p class="price">$999</p>
+          </div>
+      </div>
+
+      <div class="offer-card" data-price="1299" data-destination="asia">
+          <img src="images/asia.jpg" alt="Asia">
+          <div class="offer-details">
+              <h2>Asia Escape</h2
+              <p>Discover Asia for 10 days</p>
+              <p class="price">$1299</p>
+          </div>
+      </div>
+
+      <div class="offer-card" data-price="1199" data-destination="america">
+          <img src="images/america.jpg" alt="America">
+          <div class="offer-details">
+              <h2>America Tour</h2>
+              <p>Experience America for 8 days</p>
+              <p class="price">$1199</p>
+          </div>
+      </div>
+      <div class="offer-card" data-price="1299" data-destination="paris">
+        <img src="images/paris.jpg" alt="Asia">
+        <div class="offer-details">
+            <h2>Paris</h2
+            <p>Discover Asia for 12 days</p>
+            <p class="price">$1599</p>
+        </div>
+    </div>
+
+    <div class="offer-card" data-price="1299" data-destination="london">
+      <img src="images/london.jpg" alt="Asia">
+      <div class="offer-details">
+          <h2>London</h2
+          <p>Discover Asia for 15 days</p>
+          <p class="price">$1289</p>
+      </div>
+  </div>
+
+  <div class="offer-card" data-price="1299" data-destination="newzealand">
+    <img src="images/newzealand.jpg" alt="Asia">
+    <div class="offer-details">
+        <h2>newzealand</h2
+        <p>Discover Asia for 18 days</p>
+        <p class="price">$2099</p>
+    </div>
+</div>
+
+  </div>
+</main>
+
+<section>
+  <div class="login">
+<div class="login-container">
+  <h1>Login to YoursTravels</h1>
+  <form id="loginForm">
+      <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="#">Sign up</a></p>
+</div>
+</div>
+ </section>
+
  <section>
   <section class="contact" id="contact"> 
     <div class="contact-heading"> 
@@ -228,6 +326,7 @@
     </div>
   
 </section>
+
     <script src="script.js"></script>
   </body>
 </html>
